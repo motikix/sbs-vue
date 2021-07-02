@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CDN から Vue.js を読み込む -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>Vue from CDN</title>
+  </head>
+  <body>
+
+    <!-- この div を Vue.js の管理下におく -->
+    <div id="counter">
+      <div>
+        Counter: {{ counter }}
+      </div>
+      <div>
+        <span style="display: inline-block; min-width: 180px;">Clickable Counter: {{ ccounter }}</span>
+        <button @click="increment">Click Me!!</button>
+      </div>
+    </div>
+
+    <!-- アプリケーションをセットアップするスクリプトを読み込む -->
+    <!-- 注意点としてスクリプトはマウントポイント (ここでは↑の div のこと) の後で読み込むこと -->
+    <script src="main.js"></script>
+  </body>
+</html>
