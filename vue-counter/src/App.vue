@@ -17,7 +17,6 @@ export default {
     }
   },
   mounted() {
-    fetch('google.com')
     setInterval(() => {
       this.counter++
     }, 1000)
