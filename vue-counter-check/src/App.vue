@@ -23,6 +23,7 @@ export default {
   },
   methods: {
     increment() {
+      const unused = 'ESLint test'
       this.ccounter++
     },
   },
